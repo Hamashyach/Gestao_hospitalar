@@ -131,15 +131,15 @@ public class GerenciaPacientes {
         System.out.println("Insira o C.P.F. que deseja excluir: ");
         cpf = scanner.nextLine();
 
-        int pos = -1; // Inicializa a posição como -1 (não encontrado)
+        int pos = -1; 
         for (int i = 0; i < pacientes.length; i++) {
             if (pacientes[i] != null && pacientes[i].getCpf().equals(cpf)) {
-                pos = i; // Armazena a posição do paciente encontrado
-                break; // Sai do loop se encontrar
+                pos = i; 
+                break; 
             }
         }
 
-        if (pos != -1) { // Se o paciente foi encontrado
+        if (pos != -1) { 
             System.out.println("-=[Dados do Paciente]=-");
             pacientes[pos].imprimir();
             System.out.println("\nConfirma exclusão? (1-sim/2-não)");
@@ -167,12 +167,12 @@ public class GerenciaPacientes {
         int pos = -1;
         for (int i = 0; i < pacientes.length; i++) {
             if (pacientes[i] != null && pacientes[i].getCpf().equals(cpf)) {
-                pos = i; // Armazena a posição do paciente encontrado
-                break; // Sai do loop se encontrar
+                pos = i; 
+                break; 
             }
         }
 
-        if (pos != -1) { // Se o paciente foi encontrado
+        if (pos != -1) { 
             System.out.println("-=[Dados do Paciente]=-");
             pacientes[pos].imprimir();
         } else {
