@@ -153,15 +153,15 @@ public class GerenciaMedicos {
         System.out.println("Insira o C.R.M. que deseja excluir: ");
         crm = scanner.nextLine();
         
-        int pos = -1; // Inicializa a posição como -1 (não encontrado)
+        int pos = -1; 
         for (int i = 0; i < medicos.length; i++) {
             if (medicos[i] != null && medicos[i].getCrm().equals(crm)) {
-                pos = i; // Armazena a posição do médico encontrado
-                break; // Sai do loop se encontrar
+                pos = i; 
+                break; 
             }
         }
         
-        if(pos != -1) { // Se o médico foi encontrado
+        if(pos != -1) { 
             System.out.println("-=[Dados do Médico]=-");
             medicos[pos].imprimir();
             System.out.println("\nConfirma exclusão? (1-sim/2-não)");
@@ -191,12 +191,12 @@ public class GerenciaMedicos {
         int pos = -1;
         for (int i = 0; i < medicos.length; i++) {
             if (medicos[i] != null && medicos[i].getCrm().equals(crm)) {
-                pos = i; // Armazena a posição do médico encontrado
-                break; // Sai do loop se encontrar
+                pos = i; 
+                break; 
             }
         }
         
-        if(pos != -1) { // Se o médico foi encontrado
+        if(pos != -1) { 
             System.out.println("-=[Dados do Médico]=-");
             medicos[pos].imprimir();
         }
